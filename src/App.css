@@ -1,0 +1,306 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  background-color: unset;
+}
+
+body {
+  font-family: "Fira Sans Extra Condensed",sans-serif;
+}
+
+header {
+  width: 100vw;
+  background: transparent no-repeat 50% 50%;
+  background-size: cover;
+  z-index: 5;
+  position: relative;
+}
+
+h1 {
+  color: #0CF2B1;
+  font-size: 5rem;
+  text-align: center;
+}
+
+h2 {
+  color: #183940;
+  font-size: 3rem;
+  text-align: center;
+}
+
+h3 {
+  color: #118C76;
+  font-size: 2rem;
+  text-align: left;
+}
+
+h4 {
+  color: #26BFA3;
+  font-weight: 300;
+}
+
+h5 {
+  color: #402D22;
+  font-weight: 200;
+}
+
+p {
+  font-weight: 100;
+  font-size: 1.2em;
+  color: #183940;
+}
+
+a {
+  font-weight: 100;
+  font-size: 1.2em;
+  color: #183940;
+}
+
+  a:hover {
+      font-weight: 100;
+      font-size: 1.2em;
+      color: #0CF2B1;
+  }
+
+li {
+  font-weight: 100;
+  font-size: 1.2em;
+  color: #183940;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  line-height: 60px;
+}
+
+  nav ul {
+      line-height: 60px;
+      list-style: none;
+      background: rgba(0, 0, 0, 0);
+      overflow: hidden;
+      color: #fff;
+      padding: 0;
+      text-align: center;
+      margin: 0;
+      transition: 1s;
+  }
+
+  nav.black ul {
+      backdrop-filter: saturate(100%) blur(4px) brightness(80%);
+  }
+
+  nav.black li a {
+      color: #0CF2B1;
+  }
+
+  nav ul li {
+      display: inline-block;
+      padding: 16px 40px;
+      text-decoration: none;
+  }
+
+      nav ul li a {
+          text-decoration: none;
+          color: #183940;
+          font-size: 1.8vw;
+      }
+
+          nav ul li a:hover {
+              text-decoration: none;
+              color: #0CF2B1;
+              font-size: 1.8vw;
+          }
+
+.menu-icon {
+  line-height: 60px;
+  width: 100%;
+  max-width: 100vw;
+  background: rgba(0, 0, 0, 0);
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #0CF2B1;
+  display: none;
+}
+
+@media(max-width: 790px) {
+
+  .logo {
+      position: fixed;
+      top: 0;
+      margin-top: 16px;
+  }
+
+  nav ul {
+      max-height: 0px;
+      backdrop-filter: saturate(100%) blur(5px) brightness(50%);
+  }
+
+  nav.black ul {
+      background: #000;
+  }
+
+  .showing {
+      max-height: 85vh;
+      padding-right: 0;
+  }
+
+  nav ul li {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 24px;
+      text-align: center;
+  }
+
+      nav ul li a {
+          text-decoration: none;
+          color: #118C76;
+          font-size: 5vw;
+      }
+
+          nav ul li a:hover {
+              text-decoration: none;
+              color: #0CF2B1;
+              font-size: 5vw;
+          }
+
+  .menu-icon {
+      display: block;
+      backdrop-filter: saturate(100%) blur(5px) brightness(50%);
+  }
+}
+
+.slide-text {
+  position: absolute;
+  font-size: 5vw;
+  color: #0CF2B1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  backdrop-filter: saturate(100%) blur(1px);
+  overflow: hidden;
+}
+
+.login-icon {
+  position: absolute;
+  font-size: 5vw;
+  color: #0CF2B1;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  backdrop-filter: saturate(100%) blur(1px);
+  overflow: hidden;
+}
+
+.img-carousel {
+  left: 0;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  min-height: 80vh;
+  object-fit: cover;
+  bottom: 0;
+}
+
+.img-self {
+  left: 0;
+  height: auto;
+  float: none;
+  max-width: 100vw;
+  min-height: 100vh;
+  object-fit: cover;
+  bottom: 0;
+  position: relative;
+}
+
+.img-header {
+  left: 0;
+  height: auto;
+  float: none;
+  max-width: 100vw;
+  min-height: 30vh;
+  object-fit: cover;
+  bottom: 0;
+  position: relative;
+  mask-image: linear-gradient(to top, transparent 5%, black 100%);
+}
+
+.section-title {
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.intro-text {
+  backdrop-filter: saturate(100%) blur(3px) brightness(40%);
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-text {
+  color: white;
+  width: 100%;
+}
+
+  .skill-text:hover {
+      color: #0CF2B1;
+  }
+
+
+.arrow {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+  .arrow span {
+      display: block;
+      width: 3vw;
+      height: 3vw;
+      border-bottom: 0.7vw solid #0CF2B1;
+      border-right: 0.7vw solid #0CF2B1;
+      transform: rotate(45deg);
+      margin: -10px;
+      animation: animate 2s infinite;
+  }
+
+      .arrow span:nth-child(2) {
+          animation-delay: -0.2s;
+      }
+
+      .arrow span:nth-child(3) {
+          animation-delay: -0.4s;
+      }
+
+@keyframes animate {
+  0% {
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px,-20px);
+  }
+
+  50% {
+      opacity: 1;
+  }
+
+  100% {
+      opacity: 0;
+      transform: rotate(45deg) translate(20px,20px);
+  }
+}
+
+.tooltip {
+  background-color: #183940;
+}
+
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
